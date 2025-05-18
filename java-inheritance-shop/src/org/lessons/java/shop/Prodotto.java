@@ -61,9 +61,12 @@ public class Prodotto {
     }
 
     public String getNomeComposto() {
-        return String.format("%s-%s", this.codice, this.nome);
+        return this.toString();
     }
 
-    
+    @Override
+    public String toString(){
+        return String.format("%s-%s", this.codice, this.nome);
+    }
 }
 
